@@ -7,7 +7,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Thanks for taking the time to fill out this bug report! Please remember this ticket is public so do not include any sensitive information**
+        **Thanks for taking the time to fill out this bug report!**
+        Please remember this ticket is public so do not include any sensitive information
   - type: dropdown
     id: product
     attributes:

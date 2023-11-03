@@ -1,0 +1,48 @@
+name: Feature Request
+description: File a bug report
+title: "[Feature]: "
+labels: ["feature", "triage"]
+projects: ["PredictMobile/2"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Thanks for taking the time to request a new feature!**
+        Please remember this ticket is public so do not include any sensitive information
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      description: Which product would you like the feature added to?
+      options:
+        - Sensabill
+        - Predict
+        - Both
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem? Please describe.
+      description: Please give clear and concise description of what the problem is.
+      placeholder: |
+        I'm always frustrated when [...]
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like.
+      description: Please give a clear and concise description of what you want to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Describe alternatives you've considered.
+      description: Please give a clear and concise description of any alternative solutions or features you've considered.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checked for existing ticket
+      options:
+        - label: I confirm I have checked to see that this feature has not already been requested.
+          required: true
+        - label: I confirm I have not included any sensitive information.
+          required: true
